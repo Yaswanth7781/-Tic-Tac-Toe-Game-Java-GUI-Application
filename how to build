@@ -1,0 +1,28 @@
+1) First create a javaproject folder and write source code in txt file and save it as TicTacToeGUI.java
+Step 1: Compile Your Java File
+  If your file is TicTacToeGUI.java, open terminal/cmd in that folder and run:
+  javac TicTacToeGUI.java
+  This generates a TicTacToeGUI.class file.
+Step 2: Create a Manifest File
+  Create a file named manifest.txt with the following content:
+  Main-Class: TicTacToeGUI
+  Make sure you press Enter after the last line, or it may break.
+Step 3: Package into a JAR
+  In the same folder, run:
+  jar cfm TicTacToeGame.jar manifest.txt TicTacToeGUI.class
+  This creates TicTacToeGame.jar — your executable app!
+  if you encountered by this error 'jar' is not recognized as an internal or external command,
+  operable program or batch file.
+  then do this  Add to PATH:
+    Search “Environment Variables” in Start Menu → Open
+    Under System Variables, find Path, click Edit
+    Click New → Paste the JDK bin path:
+    C:\Program Files\Java\jdk-21\bin
+    Click OK on all windows
+step 4: Create the .jar with your fixed manifest
+    jar cfm TicTacToeGame.jar manifest.txt TicTacToeGUI.class
+  If you’re using resources like icon.png, add it too:
+    jar cfm TicTacToeGame.jar manifest.txt *.class icon.png
+  Now run:
+    java -jar TicTacToeGame.jar
+  
