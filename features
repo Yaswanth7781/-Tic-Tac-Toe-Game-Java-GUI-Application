@@ -1,0 +1,8 @@
+Key Features
+Java Swing GUI with event handling
+2-player support with auto win/tie detection
+Highlighting for win conditions
+Reset and exit options
+Custom window icon (icon.png)
+.jar + optional .exe version with icon
+Works on Windows/Linux (JDK 8+)
